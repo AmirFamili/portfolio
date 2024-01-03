@@ -1,0 +1,45 @@
+@import "base";
+
+
+
+.hamburger-menu {
+    gap: $gap;
+    direction: rtl;
+
+    
+
+    &::before,
+    &::after,
+    input {
+        content: '';
+        width: $bar-width;
+        height: $bar-height;
+        background-color: white;
+        border-radius: 1rem;
+        transform-origin: right center;
+        transition: opacity $animation-timing, width $animation-timing, rotate $animation-timing, translate $animation-timing, back-ground $animation-timing;
+        z-index: 10;
+    }
+
+    &:has(input:checked)::before {
+        rotate: -45deg;
+        width: $x-width;
+        translate: 0 calc($bar-height/-2);
+
+    }
+
+
+
+    &:has(input:checked)::after {
+        rotate: 45deg;
+        width: $x-width;
+        translate: 0 calc($bar-height/2);
+
+    }
+
+
+}
+
+
+
+
