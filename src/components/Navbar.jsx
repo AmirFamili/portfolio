@@ -1,22 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { useBottomScrollListener } from 'react-bottom-scroll-listener';
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo } from "../assets";
 
 import '../styles/navbar.scss';
+
+  
 
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-
-  
+  const [scroll,setScroll]=useState(false);
+// listenScrollEvent =()=>{
+  //   setScroll(true);
+  // }
+  // componentDidMount=()=>{
+  //   window.addEventListener('scroll',listenScrollEvent)
+  // }
   return (
     <nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 `}
+        } ${scroll? 'bg-gray-800':'bg-transparent'} bg-black w-full flex items-center py-5 fixed top-0 z-20 `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -54,9 +61,9 @@ const Navbar = () => {
 
           <div
             className={`sidebar ${!toggle ? "hidden" : "flex"
-              } p-6 h-screen black-gradient absolute top-0 right-0  min-w-[160px] z-5 rounded-xl  `}
+              } p-6 h-screen black-gradient absolute top-0 right-0  min-w-[160px] z-5 rounded-xl`}
           >
-            <ul className=' list-none items-start mt-10 flex-1 flex-col gap-4'>
+            <ul className='list-none items-start mt-10 flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
