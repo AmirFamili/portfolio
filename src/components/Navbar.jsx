@@ -7,23 +7,25 @@ import { logo } from "../assets";
 
 import '../styles/navbar.scss';
 
-  
 
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scroll,setScroll]=useState(false);
-// listenScrollEvent =()=>{
-  //   setScroll(true);
-  // }
-  // componentDidMount=()=>{
-  //   window.addEventListener('scroll',listenScrollEvent)
-  // }
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+        setColorchange(true);
+    } else {
+        setColorchange(false);
+    }
+};
+window.addEventListener("scroll", changeNavbarColor);
+
   return (
     <nav
       className={`${styles.paddingX
-        } ${scroll? 'bg-gray-800':'bg-transparent'} bg-black w-full flex items-center py-5 fixed top-0 z-20 `}
+        } ${colorChange ? 'bg-slate-900' : 'bg-transparent'} bg-black w-full flex items-center py-5 fixed top-0 z-20 `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -36,7 +38,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Amir 
+            Amir
           </p>
         </Link>
 
@@ -54,10 +56,10 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <label  className="hamburger-menu flex flex-col absolute gapr-2 top-8 ">
-            <input className=' object-contain appearance-none checked:w-0 opacity-0...' checked={!toggle?false:true} type="checkbox"  onClick={() => setToggle(!toggle)} />
+          <label className="hamburger-menu flex flex-col absolute gapr-2 top-8 ">
+            <input className=' object-contain appearance-none checked:w-0 opacity-0...' checked={!toggle ? false : true} type="checkbox" onClick={() => setToggle(!toggle)} />
           </label>
-          
+
 
           <div
             className={`sidebar ${!toggle ? "hidden" : "flex"
