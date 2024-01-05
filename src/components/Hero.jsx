@@ -10,8 +10,8 @@ import React from 'react'
 
 const Hero = () => {
   return (
-   <section className='relative h-screen w-full mx-auto'>
- <div
+    <section className='relative h-screen w-full mx-auto'>
+      <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 `}
       >
         <div className='flex flex-col justify-center items-center mt-4'>
@@ -30,10 +30,12 @@ const Hero = () => {
             make your amazing Website
           </h2>
         </div>
-        
+
+      </div>
+      <div className="ComputersCanvas absolute w-full h-full">
+        <ComputersCanvas />
       </div>
 
-      <ComputersCanvas />
 
       <div className='absolute xs:bottom-9 bottom-24 w-full flex justify-center items-center'>
         <a href='#about'>
@@ -52,7 +54,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-   </section>
+    </section>
   )
 }
 

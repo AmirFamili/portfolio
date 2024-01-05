@@ -3,3 +3,8 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+@media (max-width:500px) {
+    .ComputersCanvas{
+       display: none;
+    }
+}

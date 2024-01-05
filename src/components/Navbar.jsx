@@ -25,7 +25,7 @@ window.addEventListener("scroll", changeNavbarColor);
   return (
     <nav
       className={`${styles.paddingX
-        } ${colorChange ? 'bg-slate-900' : 'bg-transparent'} bg-black w-full flex items-center py-5 fixed top-0 z-20 `}
+        } ${colorChange ? 'bg-slate-950' : 'bg-transparent'} bg-black w-full flex items-center py-5 fixed top-0 z-20 `}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
