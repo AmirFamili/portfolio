@@ -20,7 +20,9 @@ import weather from "./weather.jpg";
 import allopower from "./allopower.jpg";
 import resturant from "./resturant.jpg";
 import snake from "./snake.png";
-
+import theauthenticapproach from './theauthenticapproach.png';
+import calendar from './calendar.jpg';
+import multiStep from './multiStep.jpg';
 
 
 
@@ -43,5 +45,8 @@ export {
   weather,
   allopower,
   resturant,
-  snake
+  snake,
+  theauthenticapproach,
+  calendar,
+  multiStep
 };

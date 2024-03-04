@@ -87,12 +87,12 @@ const Contact = () => {
           emailjs
             .send(
               'service_l7185o7',
-              'template_10l013s',
+              'template_35o88kf',
               {
                 from_name: form.name,
                 to_name: "Amir",
                 from_email: form.email,
-                to_email: "amirmohammad.familii@gmail.com",
+                to_email: "amir.famili2709@gmail.com",
                 message: form.message,
               },
               'ILFzRPGLT1I6UwRip'
@@ -142,7 +142,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${!formCheck.name ? 'border-2 border-red-600' : 'border-none'}`}
             />
           </label>
@@ -153,7 +153,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${!formCheck.email ? 'border-2 border-red-600' : 'border-none'}`}
             />
           </label>
@@ -164,7 +164,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='What do you want to say?'
               className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none  font-medium ${!formCheck.message ? 'border-2 border-red-600' : 'border-none'}`}
             />
           </label>
