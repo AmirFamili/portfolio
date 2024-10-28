@@ -18,7 +18,8 @@ import {
   snake,
   theauthenticapproach,
   calendar,
-  multiStep
+  multiStep,
+  khateelm
 } from "../assets";
 
 export const navLinks = [
@@ -85,6 +86,27 @@ const technologies = [
 
 const projects = [
   {
+    name: "Khateelm",
+    description: "Khateelm is a fast, responsive e-commerce platform built with Next.js, MUI, and Django.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: khateelm,
+    source_code_link: "https://github.com/binaludweb/khateelm-front/tree/develop",
+    web_link:'https://khateelm.com/landing',
+  },
+  {
     name: "The Authentic Approach",
     description: "Web application for a Company. A safe & supportive space to share your authentic self.",
     tags: [
@@ -103,6 +125,7 @@ const projects = [
     ],
     image: theauthenticapproach,
     source_code_link: "https://github.com/AmirFamili/the-authentic-approach",
+    web_link:'https://theauthenticapproach.com/',
   },
   {
     name: "The Calendar",
@@ -123,6 +146,7 @@ const projects = [
     ],
     image: calendar,
     source_code_link: "https://github.com/AmirFamili/calendar-app",
+    web_link:'https://amirfamili.github.io/calendar-app/',
   },
   {
     name: "Order Website",
@@ -143,6 +167,7 @@ const projects = [
     ],
     image: webdeveloper,
     source_code_link: "https://github.com/AmirFamili/webDeveloper",
+     web_link:'https://amirfamili.github.io/webDeveloper/',
   },
   {
     name: "Multi-Step",

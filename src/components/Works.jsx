@@ -15,9 +15,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  web_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div >
       <Tilt
         options={{
           max: 45,
@@ -26,7 +27,7 @@ const ProjectCard = ({
         }}
         className='bg-indigo-950 p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] cursor-pointer' onClick={() => window.open(web_link, "_blank")}>
           <img
             src={image}
             alt='project_image'
