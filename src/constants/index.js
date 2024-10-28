@@ -274,27 +274,27 @@ const projects = [
     image: resturant,
     source_code_link: "https://github.com/AmirFamili/Resturant",
   },
-  {
-    name: "Snake",
-    description:
-      "Web application platform that allows users to play Snak game.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: snake,
-    source_code_link: "https://github.com/AmirFamili/Snake",
-  },
+  // {
+  //   name: "Snake",
+  //   description:
+  //     "Web application platform that allows users to play Snak game.",
+  //   tags: [
+  //     {
+  //       name: "html",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "javascript",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: snake,
+  //   source_code_link: "https://github.com/AmirFamili/Snake",
+  // },
 ];
 
 export { technologies, projects };
