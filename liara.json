@@ -1,8 +1,0 @@
-{
-  "app": "amirfamili",
-  "port": 3000,
-  "build": {
-    "location": "usa-north"
-  },
-  "disks": []
-}

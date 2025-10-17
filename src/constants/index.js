@@ -89,7 +89,7 @@ const projects = [
   {
     name: "eloquAI",
     description:
-      "eloquAI is an AI-powered communication platform that listens to conversations, analyzes context, and suggests personalized learning paths or ideas — built for meaningful, intelligent collaboration.",
+      "eloquAI analyzes conversations and suggests personalized learning paths.",
     tags: [
       {
         name: "Next.js",
@@ -106,14 +106,6 @@ const projects = [
       {
         name: "AI / LLM",
         color: "pink-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Coolify",
-        color: "purple-text-gradient",
       },
     ],
     image: eloquai,
