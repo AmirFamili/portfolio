@@ -83,14 +83,14 @@ const technologies = [
     name: "GSAP",
     icon: gsap,
   },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
    {
     name: "supabase",
     icon: supabase,

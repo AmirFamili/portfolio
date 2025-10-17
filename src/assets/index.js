@@ -41,7 +41,7 @@ export {
   figma,
   supabase,
   mui,
-   n8n,
+  n8n,
   coolify,
   git,
   html,
