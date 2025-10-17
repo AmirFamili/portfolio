@@ -19,7 +19,8 @@ import {
   theauthenticapproach,
   calendar,
   multiStep,
-  khateelm
+  khateelm,
+  eloquai,
 } from "../assets";
 
 export const navLinks = [
@@ -86,8 +87,44 @@ const technologies = [
 
 const projects = [
   {
+    name: "eloquAI",
+    description:
+      "eloquAI is an AI-powered communication platform that listens to conversations, analyzes context, and suggests personalized learning paths or ideas — built for meaningful, intelligent collaboration.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "n8n",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "AI / LLM",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Coolify",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: eloquai,
+    source_code_link: "https://github.com/ai-speaking/fullstack",
+    web_link: "https://eloquai.app/",
+  },
+
+  {
     name: "Khateelm",
-    description: "Khateelm is a fast, responsive e-commerce platform built with Next.js, MUI, and Django.",
+    description:
+      "Khateelm is a fast, responsive e-commerce platform built with Next.js, MUI, and Django.",
     tags: [
       {
         name: "Next.js",
@@ -103,12 +140,12 @@ const projects = [
       },
     ],
     image: khateelm,
-    source_code_link: "https://github.com/binaludweb/khateelm-front/tree/develop",
-    web_link:'https://khateelm.com/landing',
+    web_link: "https://khateelm.com/",
   },
   {
     name: "The Authentic Approach",
-    description: "Web application for a Company. A safe & supportive space to share your authentic self.",
+    description:
+      "Web application for a Company. A safe & supportive space to share your authentic self.",
     tags: [
       {
         name: "React.js",
@@ -125,7 +162,7 @@ const projects = [
     ],
     image: theauthenticapproach,
     source_code_link: "https://github.com/AmirFamili/the-authentic-approach",
-    web_link:'https://theauthenticapproach.com/',
+    web_link: "https://theauthenticapproach.com/",
   },
   {
     name: "The Calendar",
@@ -146,7 +183,7 @@ const projects = [
     ],
     image: calendar,
     source_code_link: "https://github.com/AmirFamili/calendar-app",
-    web_link:'https://amirfamili.github.io/calendar-app/',
+    web_link: "https://amirfamili.github.io/calendar-app/",
   },
   {
     name: "Order Website",
@@ -167,7 +204,7 @@ const projects = [
     ],
     image: webdeveloper,
     source_code_link: "https://github.com/AmirFamili/webDeveloper",
-     web_link:'https://amirfamili.github.io/webDeveloper/',
+    web_link: "https://amirfamili.github.io/webDeveloper/",
   },
   {
     name: "Multi-Step",

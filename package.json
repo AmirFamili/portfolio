@@ -4,20 +4,22 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+  "dev": "vite",
+  "dev:silent": "vite --logLevel silent",
+  "dev:quiet": "vite > /dev/null",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "-": "^0.0.1",
+    
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.13",
     "formik": "^2.4.5",
     "framer-motion": "^10.17.0",
     "maath": "^0.10.7",
-    "node-sass": "^9.0.0",
+    
     "react": "^18.2.0",
     "react-bottom-scroll-listener": "^5.1.0",
     "react-dom": "^18.2.0",

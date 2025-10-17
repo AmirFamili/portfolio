@@ -24,6 +24,7 @@ import theauthenticapproach from './theauthenticapproach.png';
 import calendar from './calendar.jpg';
 import multiStep from './multiStep.jpg';
 import khateelm from './khateelm.png';
+import eloquai from './eloquai.png';
 
 
 
@@ -50,5 +51,6 @@ export {
   theauthenticapproach,
   calendar,
   multiStep,
-  khateelm
+  khateelm,
+  eloquai,
 };
