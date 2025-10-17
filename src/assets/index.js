@@ -13,6 +13,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import gsap from "./tech/gsap.svg";
 import nextjs from "./tech/nextjs.png";
+import supabase from "./tech/supabase.png";
+import mui from "./tech/mui.png";
+import n8n from "./tech/n8n.png";
+import coolify from "./tech/coolify.png";
 
 import webdeveloper from "./webdeveloper.jpg";
 import learning from "./learning.jpg";
@@ -35,6 +39,10 @@ export {
   gsap,
   nextjs,
   figma,
+  supabase,
+  mui,
+   n8n,
+  coolify,
   git,
   html,
   javascript,

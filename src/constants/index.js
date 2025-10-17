@@ -21,6 +21,10 @@ import {
   multiStep,
   khateelm,
   eloquai,
+  supabase,
+  mui,
+  n8n,
+  coolify,
 } from "../assets";
 
 export const navLinks = [
@@ -71,6 +75,10 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+    {
+    name: "mui",
+    icon: mui,
+  },
   {
     name: "GSAP",
     icon: gsap,
@@ -82,6 +90,18 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
+  },
+   {
+    name: "supabase",
+    icon: supabase,
+  },
+  {
+    name: "n8n",
+    icon: n8n,
+  },
+  {
+    name: "coolify",
+    icon: coolify,
   },
 ];
 
