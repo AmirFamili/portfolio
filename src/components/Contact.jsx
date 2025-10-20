@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -22,6 +21,11 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+
+  // Initialize EmailJS when component mounts
+  useEffect(() => {
+    emailjs.init('ILFzRPGLT1I6UwRip');
+  }, []);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -94,8 +98,7 @@ const Contact = () => {
                 from_email: form.email,
                 to_email: "amir.famili2709@gmail.com",
                 message: form.message,
-              },
-              'ILFzRPGLT1I6UwRip'
+              }
             )
             .then(
               () => {
@@ -188,4 +191,5 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+const WrappedContact = SectionWrapper(Contact, "contact");
+export default WrappedContact;
