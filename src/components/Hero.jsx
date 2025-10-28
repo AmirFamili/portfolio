@@ -21,10 +21,10 @@ const Hero = () => {
 
         <div>
           <h2 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='title'>Amir</span>
+            Hi, I'm <span className='title'>Amir Famili</span>
           </h2>
           <h1 className={`${styles.heroSubText} mt-2  text-[#4c61eb]`}>
-            Front End Developer
+            Full Stack Developer
           </h1>
           <h2 className={`${styles.BelowHeroSubText} mt-1  text-white-100`}>
             make your amazing Website
