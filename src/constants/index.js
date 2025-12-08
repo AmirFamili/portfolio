@@ -25,6 +25,7 @@ import {
   mui,
   n8n,
   coolify,
+  launchino,
 } from "../assets";
 
 export const navLinks = [
@@ -107,6 +108,32 @@ const technologies = [
 
 const projects = [
   {
+    name: "Launchino",
+    description:
+      "Launchino is where Iranian MVPs launch, get seen, and get votes.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "n8n",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: eloquai,
+    source_code_link: "https://github.com/ai-speaking/fullstack",
+    web_link: "https://eloquai.app/",
+  },
+  {
     name: "eloquAI",
     description:
       "eloquAI analyzes conversations and suggests personalized learning paths.",
@@ -132,7 +159,6 @@ const projects = [
     source_code_link: "https://github.com/ai-speaking/fullstack",
     web_link: "https://eloquai.app/",
   },
-
   {
     name: "Khateelm",
     description:

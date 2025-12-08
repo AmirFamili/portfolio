@@ -29,6 +29,7 @@ import calendar from './calendar.jpg';
 import multiStep from './multiStep.jpg';
 import khateelm from './khateelm.png';
 import eloquai from './eloquai.png';
+import launchino from './launchino.png';
 
 
 
@@ -61,4 +62,5 @@ export {
   multiStep,
   khateelm,
   eloquai,
+  launchino,
 };
