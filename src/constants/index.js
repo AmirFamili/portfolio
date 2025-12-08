@@ -129,7 +129,7 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: eloquai,
+    image: launchino,
     web_link: "https://launchinohub.com/",
   },
   {
