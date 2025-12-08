@@ -130,8 +130,7 @@ const projects = [
       },
     ],
     image: eloquai,
-    source_code_link: "https://github.com/ai-speaking/fullstack",
-    web_link: "https://eloquai.app/",
+    web_link: "https://launchinohub.com/",
   },
   {
     name: "eloquAI",
